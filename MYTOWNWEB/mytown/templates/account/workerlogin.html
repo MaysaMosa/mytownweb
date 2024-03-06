@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('your-galaxy-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.8); /* White container background color with opacity */
+      padding: 20px; /* Decreased padding for a smaller container */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px; /* Decreased width for a smaller container */
+      text-align: center; /* Align text to the center */
+    }
+
+    h2 {
+      color: #333333; /* Dark gray text color */
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #333333; /* Dark gray text color */
+    }
+
+    input {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #cccccc; /* Light gray border color */
+      border-radius: 4px;
+    }
+
+    button, .back-button {
+      background-color: #3498db; /* Blue button color */
+      color: #ffffff; /* White text color */
+      padding: 8px; /* Decreased padding for smaller buttons */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%; /* Make the buttons take full width */
+    }
+
+    .back-button {
+      background-color: #ccc; /* Light gray button color */
+      color: #333; /* Dark gray text color */
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" method="post" onsubmit="return false;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="button" onclick="login()">Login</button>
+      <a href="#" class="back-button">Back</a>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      // Add your login logic here
+      console.log('Login button clicked');
+    }
+  </script>
 
 </body>
-      
-    
 </html>
+

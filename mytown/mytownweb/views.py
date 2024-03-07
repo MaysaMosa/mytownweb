@@ -12,7 +12,9 @@ def home(request):
     return render(request,"mytown/index.html" )
 
 def signup(request):
+   
     if request.method == "POST":
+   
         username = request.POST['username']
         fname = request.POST['fname']
         lname = request.POST['lname']

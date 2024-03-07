@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my town</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h3>Sign Up</h3>
+
+    <form action="/signin" method="post">
+    {% csrf_token %}
+        <label for="">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter user name" required>
+        <br>
+
+        <label for="">password</label>
+        <input type="password" id="pass1" name="pass1" placeholder="Enter your password" required>
+        <br>
+
+
+        <button onclick="signUpSubmit" type="submit">sign In</a></button>
+
+    </form>
+
+
+
+	<script src="" async defer></script>
+  </body>
+</html>

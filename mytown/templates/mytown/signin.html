@@ -5,13 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my town</title>
-    <link rel="stylesheet" href="style.css">
+    <style>body {
+      font-family: sans-serif;  
+      margin: 0;                 
+      padding: 20px;             
+    }
+    
+    h3 {
+      text-align: center;        
+      margin-bottom: 20px;        
+    }
+    
+    form {
+      display: flex;             
+      flex-direction: column;    
+      width: 300px;              
+      margin: 0 auto;            
+      border: 1px solid #ccc;     
+      border-radius: 5px;        
+      padding: 15px;             
+    }
+    
+    form label {
+      margin-bottom: 5px;         
+      font-weight: bold;        
+    }
+    
+    form input[type="text"],
+    form input[type="password"] {
+      padding: 10px;             
+      border: 1px solid #ccc;     
+      border-radius: 3px;        
+      margin-bottom: 10px;        
+      width: 100%;              
+    }
+    
+    form button {
+      background-color: #007bff;  
+      color: white;              
+      padding: 10px 15px;         
+      border: none;              
+      border-radius: 3px;        
+      cursor: pointer;           
+    }
+    
+    form button:hover {
+      background-color: #007bff;  
+    }
+    </style>
   </head>
   <body>
 
     <h3>Sign Up</h3>
 
-    <form action="/signin" method="post">
+    <form action="/mytownwebsite/homepage/" method="post">
     {% csrf_token %}
         <label for="">Username</label>
         <input type="text" id="username" name="username" placeholder="Enter user name" required>

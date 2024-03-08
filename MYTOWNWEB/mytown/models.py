@@ -3,7 +3,6 @@ from django.db import models
 
 class AddReport(models.Model):
     title = models.CharField(max_length=500)
-    email = models.EmailField()
 
     CITY_CHOICES = [
         ('BEER', 'Beer Sheva'),

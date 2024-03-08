@@ -35,7 +35,7 @@
 <hr>
 
 <head>
-        <link rel="stylesheet" href="stylereport.css">
+        <link rel="stylesheet" href="/static/stylereport.css">
         </head>
       
 <html lang="en">
@@ -43,18 +43,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Report</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/static/stylereport.css">
 </head>
 <body>
   <div class="container">
     <h1>Add Report</h1>
-    <form id="report-form" method="post" enctype="multipart/form-data" >
+    <form action="/mytown/addreports/" method="post">
+      {% csrf_token %}
       <div class="form-group">
-        <label for="title">Title:</label>
+        <label for="title" >Title:</label> 
         <input type="text" id="title" name="title" required placeholder="Enter a descriptive report title">
+       
       </div>
       <div class="form-group">
-        <label for="city">Choose City:</label>
+        <label for="">City:</label> 
         <select id="city" name="city" required>
             <option value=" "> </option>
             <option value="Be'er Sheva">Be'er Sheva</option>
@@ -79,51 +81,44 @@
 
         </select>
       </div>
+  
       <div class="form-group">
-        <label for="description">Description:</label>
+        <label for="">Description:</label> 
         <textarea id="description" name="description" required placeholder="Provide a detailed description of the report (up to 100 words)" maxlength="100" required></textarea>
       </div>
       <div class="form-group">
-        <label for="location">Location :</label>
+        <label for="text">Location :</label>
         <input type="text" id="location" name="location" placeholder="Enter the specific location (e.g., address, landmark)" required>
       </div>
       <div class="form-group">
-        <label for="pictures">Add Pictures (optional):</label>
+        <label for="file">Add Pictures (optional):</label>
        
         <input type="file" id="picture" name="picture">
       </div>
       <div class="button-group">
         <button type="submit" style="background-color: #1E90FF">Submit Report</button>
-        <button type="button" onclick="goBack() " style="background-color: #1E90FF">Back</button>
+        <!-- <button type="button" onclick="goBack() " style="background-color: #1E90FF">Back</button> -->
+        <!-- <form method="post" action="/mytown/addreports/"> -->
+       
       </div>
     </form>
   </div>
 
-  <script>
+  <!-- <script>
     function goBack() {
       window.history.back();
     }
-  </script>
+  </script> -->
 </body>
 </html>
 
 
-  <script>
+  <!-- <script>
     function goBack() {
       window.history.back();
     }
   </script>
-</body>
-</html>
 
-
- 
- 
-
-
-<hr>
-<h5> ourfooter</h5>
-</body>
       
-    
-</html>
+  
+</html> -->

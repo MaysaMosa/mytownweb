@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login
+
+from django.http import HttpResponse , HttpResponseRedirect
 # Create your views here.
 
 
@@ -64,3 +66,9 @@ def signout(request):
 
 def homepage(request):
     return render(request,"homepage" )
+
+def contactus(request):
+    return render (request , 'contactus.html')
+
+def thankyou (request):
+    return HttpResponseRedirect(reverse('contactus'))

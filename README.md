@@ -73,6 +73,6 @@ To get started with MyTown:
 
 ## Feedback
 
-We welcome your feedback and suggestions to improve MyTownFix. Contact us at mytown2423@gmail.com.
+We welcome your feedback and suggestions to improve MyTow. Contact us at mytown2423@gmail.com.
 
 Let's work together to create a cleaner, safer, and more vibrant community!

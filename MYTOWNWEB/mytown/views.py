@@ -20,7 +20,7 @@ def workerlogin(request):
         messages.success(request, "user added successfully!")
         return redirect('workerlogin')
        
-       return render(request, "acconut/workerlogin.html" )
+       return render(request, "acconut/workerlogin.html")
 
 def addreports(request):
     if request.method == "POST":

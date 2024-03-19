@@ -56,3 +56,9 @@ def reports_list(request):
         reports = AddReport.objects.all()
         total_reports = AddReport.objects.count()
         return render(request, 'account/reportslist.html', {'reports': reports})
+
+def citizenreports(request):
+        reports = AddReport.objects.all()
+        total_reports = AddReport.objects.count()
+        return render(request, 'account/citizenreports.html', {'reports': reports})
+

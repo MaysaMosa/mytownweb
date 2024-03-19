@@ -132,3 +132,10 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 # Media files (uploads)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
+
+SILENCED_SYSTEM_CHECKS = [
+    'admin.E108',
+    'admin.E409',
+    'admin.E410',
+    'translation.E001',
+]

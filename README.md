@@ -26,7 +26,7 @@ MyTown encourages community engagement by allowing citizens to comment on and up
 ### 2. Worker Dashboard
 
 #### Specialized Workers
-MyTownFix brings together a team of specialized workers to cater to various domains such as:
+MyTown brings together a team of specialized workers to cater to various domains such as:
 
 Street Maintenance: Tackling issues like potholes, damaged sidewalks, and road repairs.
 
